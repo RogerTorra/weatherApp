@@ -1,7 +1,6 @@
 # weather-app
 
-This project is generated with [yo angular generator](https://github.com/yeoman/generator-angular)
-version 0.15.1.
+AngularJS application to load local wheater info.
 
 ## Build & development
 
