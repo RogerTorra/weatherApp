@@ -3,12 +3,12 @@
   <p class="lead">
     
   </p>
-   <input type="text" ng-model="main.city" /><img src="{{main.urlIcon}}" alt=""><br>
+   <input type="text" ng-model="main.city" /><br>
   <label for="units">Units</label>
   <input type="radio" ng-model="main.units" value="metric"/> Metric
   <input type="radio" ng-model="main.units" value="imperial"/> Imperial</br>
   <h3>{{main.data.name}}</h3>
-  <p>{{main.description}}</p>
+  <p><span translate>{{main.description}}</span><img src="{{main.urlIcon}}" alt=""></p>
   <p>Temperature: {{main.main.temp}}</p>
   <p>Wind speed: {{main.wind.speed}}</p>
   <p><a class="btn btn-lg btn-success" ng-click="main.change()">Load<span class="glyphicon glyphicons-temperature"></span></a></p>

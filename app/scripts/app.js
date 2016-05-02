@@ -12,9 +12,10 @@ angular
   .module('weatherAppApp', [
     'ngAnimate',
     'ngResource',
-    'ngRoute'
+    'ngRoute',
+    'pascalprecht.translate'
   ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider,$translateProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -29,4 +30,10 @@ angular
       .otherwise({
         redirectTo: '/'
       });
+    $translateProvider.translations('es', {
+        'clear sky': 'Dia solejat',
+        'few clouds': 'Una mica nuvolat',
+        'scattered clouds': 'Núvols dispersos',
+    });
+    $translateProvider.preferredLanguage('es');
   });
