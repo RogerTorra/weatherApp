@@ -22,7 +22,7 @@ angular.module('weatherAppApp')
     vm.change = change;
 
     // Trigger form submission for first load.
-    vm.change();
+    //vm.change();
 
     // Define a function to process form submission.
     function change() {
@@ -33,7 +33,7 @@ angular.module('weatherAppApp')
             q : vm.city,
             units : vm.units,
             callback: 'JSON_CALLBACK',
-            APPID:'your api key here!!'
+            APPID:'84b6347084ad65774961a206dabb80e5'
             }}).
         success(function(data, status, headers, config) {
             vm.main = data.main;

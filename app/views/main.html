@@ -1,10 +1,9 @@
 <div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
+  <h1>You are from: {{::main.city}}</h1>
   <p class="lead">
-    <img src="{{main.urlIcon}}" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
+    
   </p>
-   <input type="text" ng-model="main.city" /></br>
+   <input type="text" ng-model="main.city" /><img src="{{main.urlIcon}}" alt=""><br>
   <label for="units">Units</label>
   <input type="radio" ng-model="main.units" value="metric"/> Metric
   <input type="radio" ng-model="main.units" value="imperial"/> Imperial</br>
@@ -12,7 +11,7 @@
   <p>{{main.description}}</p>
   <p>Temperature: {{main.main.temp}}</p>
   <p>Wind speed: {{main.wind.speed}}</p>
-  <p><a class="btn btn-lg btn-success" ng-click="main.change()">Load<span class="glyphicon glyphicon-ok"></span></a></p>
+  <p><a class="btn btn-lg btn-success" ng-click="main.change()">Load<span class="glyphicon glyphicons-temperature"></span></a></p>
 
 </div>
 
